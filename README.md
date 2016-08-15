@@ -13,6 +13,14 @@
     第二：进入gradle---wrapper---gradle-wrapper中，distributionUrl=https\://services.gradle.org/distributions/gradle-2.8-all.zip，2.8是你的版本号，
 
     结束。
+    
+## 关于build.gradle的里面的关键编译的讲解
+
+     compileSdkVersion 23  这个是api的版本，高的版本里面的方法多而且新，存放目录是C:\myprogram\sdk\platforms
+
+      buildToolsVersion "23.0.1" 编译的版本 这个修改后可以直接从网上下载，自动下载的。
+
+     最后，这两个最好一样，是23都是23最好。
 
 
 ##2.对于别人写的不错的布局，看不出来具体的安排，可以使用sdk中带的工具来看一下
