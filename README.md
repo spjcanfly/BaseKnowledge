@@ -27,7 +27,7 @@
 
     存放的位置是：E:\adt\adt-bundle-windows-x86_64_20140101\adt-bundle-windows-x86_64_20140101\sdk\tools\hierarchy viewer  然后双击打开即可  然后点击 activity 的名字即可
 
-##3.一些记不住的快捷键的使用
+##3.一些记不住的快捷键的使用    要找快捷键的话，从Setting→Keymap
   
      ctrl + shift + t 查找一个你输入的名字 看它继承谁，实现哪个接口
 
@@ -50,6 +50,8 @@
      ctrl + g 看看谁调用了这个方法
 
      ctrl + alt + c 变成常量
+     
+     ctrl + O  显示该类的所有写的方法
  
 ##4.Genymotion模拟器的安装
    
