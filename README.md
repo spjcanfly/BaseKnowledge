@@ -1,5 +1,3 @@
- AS 
-
 
 ##1.Android Studio的安装的收获##
  
