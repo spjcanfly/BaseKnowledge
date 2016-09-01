@@ -12,6 +12,12 @@
     第二：进入gradle---wrapper---gradle-wrapper中，distributionUrl=https\://services.gradle.org/distributions/gradle-2.8-all.zip，2.8是你的版本号，
 
     结束。
+    
+    2.1 将eclipse的工程导入AS中
+    
+    可以直接import module，也可以new module，里面有一个选项是
+    Import Eclipse也可以导入。
+    
 ##3.关于build.gradle的里面的关键编译的讲解
 
      compileSdkVersion 23  这个是api的版本，高的版本里面的方法多而且新，存放目录是C:\myprogram\sdk\platforms
