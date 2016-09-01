@@ -130,3 +130,5 @@
 屏幕密度从ldpi到xhdpi分别对应为120dpi、160dpi、240dpi、320dpi
 
 设备优先匹配与它相近的尺寸的文件夹中的图片，通常来说，图片放在drawable-hdpi的文件夹中
+
+安卓屏幕百分比适配：http://blog.csdn.net/lmj623565791/article/details/46767825
