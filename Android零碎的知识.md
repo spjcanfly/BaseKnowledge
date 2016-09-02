@@ -30,4 +30,4 @@
     
 ##4.如何将屏幕上的Activity的标题去掉
    
-    在创建好一个activity后，
+    在创建好一个activity后，把extends AppCompatActivity 修改为 extends Activity 完成！
