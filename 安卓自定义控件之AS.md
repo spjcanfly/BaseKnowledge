@@ -60,7 +60,7 @@
     2.点击Genymotion这个图标，进去后点击add，添加要下载的虚拟手机，有账号密码，下载后列表中就会出现你下载的机型
     3.然后打开 oracle vm virtualBox ，点击管理-导入虚拟电脑-点击文件夹，导入你下载的机型，打开即可。
     4.再次打开genymotion，就会出现你刚刚导入的机型，然后打开AS，点击运行后，然后genymotion那个虚拟机就会出来了，此时一定那个genymotion那个图标也要点击，运行中。想跟AS关联，就点击进入setting的界面,有个plugins,进入后可以搜索genymotion下载,也可以直接关联你下载的,以后就可以在as中打开使用了.
-    5.genymotion的sd卡的目录查找：
+    5.genymotion的sd卡的目录查找：android device monitor里面的file explorer 
 
 ##1.5版本的androidStudio的bug
 
