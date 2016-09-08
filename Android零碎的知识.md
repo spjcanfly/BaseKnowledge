@@ -31,3 +31,8 @@
 ##4.如何将屏幕上的Activity的标题去掉
    
     在创建好一个activity后，把extends AppCompatActivity 修改为 extends Activity 完成！
+    
+##5.如何在横竖屏切换的时候不用再走一次Activity的生命周期
+
+    在清单文件中，该Activity标签里添加：
+    android:configChanges="keyboardHidden|orientation|screenSize"
