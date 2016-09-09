@@ -39,4 +39,4 @@
 
 ##6.初始化第三方库的地方
 
-    新建一个App名+application，继承Application，
+    新建一个App名+application，继承Application，清单列表中加上 android:name=".类名"，
