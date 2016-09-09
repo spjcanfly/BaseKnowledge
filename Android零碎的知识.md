@@ -36,3 +36,7 @@
 
     在清单文件中，该Activity标签里添加：
     android:configChanges="keyboardHidden|orientation|screenSize"
+
+##6.初始化第三方库的地方
+
+    新建一个App名+application，继承Application，
