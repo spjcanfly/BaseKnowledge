@@ -55,3 +55,5 @@
      datas = bean.getList();
 
      这个SmartServicePagerBean类中，有一个属性是List<SmartServicePagerBean.Wares> datas，所以解析完以后直接就是一个集合。里面有好多java对象，可以获得各个对象的属性。
+     
+     也可以这样解析：
