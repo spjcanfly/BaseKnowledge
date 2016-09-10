@@ -41,3 +41,17 @@
 
     新建一个App名+application，继承Application，清单列表中加上 android:name=".类名"，
     通常这个类的位置是在与其他的文件夹同级。
+    
+##7.Gson解析数据
+
+    //使用Gson解析商城热卖的json数据
+    private SmartServicePagerBean parsedJson(String json) {
+
+        return new Gson().fromJson(json,SmartServicePagerBean.class);
+
+    }
+
+     SmartServicePagerBean bean = parsedJson(json);
+     datas = bean.getList();
+
+     这个SmartServicePagerBean类中，有一个属性是List<SmartServicePagerBean.Wares> datas，所以解析完以后直接就是一个集合。里面有好多java对象，可以获得各个对象的属性。
