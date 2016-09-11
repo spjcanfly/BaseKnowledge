@@ -79,3 +79,11 @@
 
                     mediaItems.add(mediaitem);
                     }
+                
+##8.关于drawable-hdpi和drawable-xhdpi的使用
+
+    drawable 里面放置的是选择器，还有一些.9图片（边缘看起来不会模糊）
+
+    drawable-hdpi 通常放置的是控件之类的图片
+
+    drawable-xhdpi 通常放置的是进去后首个页面的图标，比如四个Fragment切换时候的图标，因为这样可以看起来图标比较小，更好看些。
