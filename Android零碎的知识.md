@@ -80,7 +80,7 @@
                     mediaItems.add(mediaitem);
                     }
                 
-##8.关于drawable-hdpi和drawable-xhdpi的使用
+##8.关于drawable，drawable-hdpi和drawable-xhdpi的使用
 
     drawable 里面放置的是选择器，还有一些.9图片（边缘看起来不会模糊）
 
