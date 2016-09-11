@@ -44,7 +44,7 @@
     
 ##7.Gson解析数据
 
-    //使用Gson解析商城热卖的json数据
+    // 第一种解析，使用Gson解析商城热卖的json数据
     private SmartServicePagerBean parsedJson(String json) {
 
         return new Gson().fromJson(json,SmartServicePagerBean.class);
@@ -56,7 +56,7 @@
 
      这个SmartServicePagerBean类中，有一个属性是List<SmartServicePagerBean.Wares> datas，所以解析完以后直接就是一个集合。里面有好多java对象，可以获得各个对象的属性。
      
-     也可以这样解析：
+      第二种解析，也可以这样解析：
      
        JSONObject jsonObject = new JSONObject(json);
             JSONArray trailers = jsonObject.optJSONArray("trailers");
