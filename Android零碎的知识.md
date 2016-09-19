@@ -100,4 +100,4 @@
 
      需要注意的是，必须格式为android：color = 颜色。这个color不会自动提示。
      
-##13.
+##13.如果出现个别项目出现java.exe，value2的错误，而其他项目可以运行，试着点一下clean project
