@@ -101,3 +101,5 @@
      需要注意的是，必须格式为android：color = 颜色。这个color不会自动提示。
      
 ##13.如果出现个别项目出现java.exe，value2的错误，而其他项目可以运行，试着点一下clean project
+
+##14.当建一个activity继承AppCompatActivity会出现一个项目名的一栏，在这个activity的清单文件中加上android:theme="@style/Theme.AppCompat.Light.NoActionBar
