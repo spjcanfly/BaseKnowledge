@@ -73,7 +73,7 @@
 ##8.什么时候继承view和viewgroup的区别
 
     如果组件固定的位置不变，则继承view
-    如果组件的位置变化，例如侧滑，则继承viewgroup
+    如果组件的位置变化，例如侧滑，则继承viewgroup,是控件如何放
 
 ##9.getX，getRawX的区别。
 
