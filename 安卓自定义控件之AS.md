@@ -135,3 +135,10 @@
 设备优先匹配与它相近的尺寸的文件夹中的图片，通常来说，图片放在drawable-hdpi的文件夹中
 
 安卓屏幕百分比适配：http://blog.csdn.net/lmj623565791/article/details/46767825. 
+
+17.android studio在XML预览中出现Rendering Problems问题 
+
+   解决方法：1.在styles.xml里的<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+   原来是没有Base的，加上那个问题就没了。但是我不知道真正的原因。
+
+   2.布局文件预览那里的API调到21以下，就没有了
