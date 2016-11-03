@@ -12,6 +12,16 @@ activity的生命周期时，系统回收你的activity时发现还有一个cont
 
 ，需要非常重视这点（一个全局静态变量在引用context时一定要使用application的Context， 而不要使用activity的)
 
-避免context相关的内存泄露，记住以下几点： （1）. 不要让生命周期长的对象引用activity context，即保证引用activity的对象要与activity本身生命周期是一样的 
+ 避免context相关的内存泄露，记住以下几点： 
+（1）. 不要让生命周期长的对象引用activity context，即保证引用activity的对象要与activity本身生命周期是一样的 
 （2）. 对于生命周期长的对象，可以使用application context 
 （3）. 避免非静态的内部类，尽量使用静态类，避免生命周期问题，注意内部类对外部对象引用导致的生命周期变化
+
+2.Eventbus源码解析
+
+register：
+扫描了所有的方法，把匹配的方法最终保存在subscriptionsByEventType（Map，key：eventType ； 
+value：CopyOnWriteArrayList<Subscription> ）中；
+eventType是我们方法参数的Class，Subscription中则保存着subscriber, subscriberMethod（method, threadMode, eventType）,
+priority；包含了执行改方法所需的一切。
+可以说，就是在一个单例内部维持着一个map对象存储了一堆的方法；post无非就是根据参数去查找方法，进行反射调用。
