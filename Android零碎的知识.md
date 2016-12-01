@@ -104,4 +104,4 @@
 
 ##14.当建一个activity继承AppCompatActivity会出现一个项目名的一栏，在这个activity的清单文件中加上android:theme="@style/Theme.AppCompat.Light.NoActionBar
 
-##15.切图的大小是：1280*720，1920*1080
+##15.切图的大小是：1280*720（320dpi，xhdpi），1920*1080（480dpi，xxhdpi）
