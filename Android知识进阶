@@ -25,3 +25,22 @@ value：CopyOnWriteArrayList<Subscription> ）中；
 eventType是我们方法参数的Class，Subscription中则保存着subscriber, subscriberMethod（method, threadMode, eventType）,
 priority；包含了执行改方法所需的一切。
 可以说，就是在一个单例内部维持着一个map对象存储了一堆的方法；post无非就是根据参数去查找方法，进行反射调用。
+
+3.获取屏幕的宽高，通知栏的高度。
+
+     //获取屏幕的宽度
+     DisplayMetrics dm = new DisplayMetrics();
+     getWindowManager().getDefaultDisplay().getMetrics(dm);
+     int screenWidth = dm.widthPixels;
+     int screenHeight = dm.heightPixels;
+     
+     /**
+       * 获取状态栏高度——方法
+       * */
+        int statusBarHeight = -1;
+        //获取status_bar_height资源的ID
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            //根据资源ID获取响应的尺寸值
+            statusBarHeight = getResources().getDimensionPixelSize(resourceId);
+        }
