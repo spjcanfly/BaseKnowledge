@@ -44,3 +44,17 @@ priority；包含了执行改方法所需的一切。
             //根据资源ID获取响应的尺寸值
             statusBarHeight = getResources().getDimensionPixelSize(resourceId);
         }
+
+4.属性动画和补间动画的常用功能的总结 
+
+  http://www.jianshu.com/p/ec62b81df7ed 
+  
+  当时做那个平移的属性动画，就把我折磨的不行，主要是斜着移动，完美解决！
+  
+   ObjectAnimator animator1 = ObjectAnimator.ofFloat(mImageView, "translationX", 0f,200f);
+    ObjectAnimator animator2 = ObjectAnimator.ofFloat(mImageView, "translationY", 0f,200f);
+    ObjectAnimator animator3 = ObjectAnimator.ofFloat(mImageView, "rotation", 0f,360f);
+    AnimatorSet set = new AnimatorSet();
+    set.play(animator1).with(animator2);
+    set.play(animator3).after(animator1);
+    set.setDuration(1000).start();
