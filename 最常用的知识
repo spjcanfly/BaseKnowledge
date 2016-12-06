@@ -1,0 +1,6 @@
+1.对于AS文件夹详细的认识
+
+【build-tools】里面是不同版本(例如21.1.1)的build工具，这些工具包括了aapt打包工具、dx.bat、aidl.exe等等，就是buildToolsVersion的版本号
+【platform】是存放不同API-level版本SDK目录的地方
+【platform-tools】是一些android平台相关的工具，adb、fastboot等
+【tools】是指的安卓开发相关的工具，例如android.bat、ddms.bat(Dalvik debug Monitor Service)、draw9patch.bat等等
