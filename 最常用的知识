@@ -10,3 +10,21 @@ android:minSdkVersion：如果系统的API level低于android:minSdkVersion设�
 android:targetSdkVersion：如果平台的API Level高于你的应用程序中的targetSdkVersion属性指定的值，系统会开启兼容行为来确保
 你的应用程序继续以期望的形式来运行。
 android:maxSdkVersion：根据官方文档中的说明， 已经不再推荐使用这个属性，这个值已经不再起作用。
+
+
+3.
+Android 7.0 = API Level 24
+Android 6.0 = API Level 23
+Android 5.1.1 = API Level 22
+Android 5.0.1 = API Level 21
+Android 4.4W (L) = API Level 20
+Android 4.4.2 = API Level 19
+Android 4.3 = API Level 18
+Android 4.2-4.2.2 = API Level 17
+Android 4.1-4.1.1 = API Level 16
+Android 4.0.3-4.0.4 = API Level 15
+Android 4.0-4.0.2 = API Level 14
+Android 3.2 = API Level 13
+Android 3.1.x = API Level 12
+Android 3.0.x = API Level 11
+Android 2.3.3+ = API Level 10
