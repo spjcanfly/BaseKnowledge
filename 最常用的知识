@@ -28,3 +28,7 @@ Android 3.2 = API Level 13
 Android 3.1.x = API Level 12
 Android 3.0.x = API Level 11
 Android 2.3.3+ = API Level 10
+
+4.没有打包，用来调试用的测试版的app存放的位置 
+
+   app：build：outputs：apk 里面就是存放的
