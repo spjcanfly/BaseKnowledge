@@ -32,3 +32,16 @@ Android 2.3.3+ = API Level 10
 4.没有打包，用来调试用的测试版的app存放的位置 
 
    app：build：outputs：apk 里面就是存放的
+
+5.用mediaPlayer 播放assets中的音频文件
+
+    private MediaPlayer mediaPlayer;
+    private AssetManager am;
+     am = getAssets();
+     mediaPlayer = new MediaPlayer();
+     AssetFileDescriptor fileDescriptor = am.openFd("02.mp3");
+     mediaPlayer.setDataSource(fileDescriptor.getFileDescriptor(),fileDescriptor.getStartOffset(),fileDescriptor.getLength());
+     mediaPlayer.prepare();
+     mediaPlayer.start();
+     mediaPlayer.stop();
+     mediaPlayer.release();
