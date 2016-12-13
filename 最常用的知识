@@ -47,3 +47,8 @@ Android 2.3.3+ = API Level 10
      mediaPlayer.start();
      mediaPlayer.stop();
      mediaPlayer.release();
+
+6.StringBuild，拼接字符串，这个速度快，线程不安全
+   sb.append();//连接字符串
+   sb.insert();//在这个字符串中插入一些诸如空格的东西
+   sb.toString();//有时候直接输出必须得先转化为字符串才行。
