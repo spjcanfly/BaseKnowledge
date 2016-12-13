@@ -40,6 +40,8 @@ Android 2.3.3+ = API Level 10
      am = getAssets();
      mediaPlayer = new MediaPlayer();
      AssetFileDescriptor fileDescriptor = am.openFd("02.mp3");
+      //重用mediaPlayer对象，这一句很重要，如果要播放的音频多的话必须要用这个
+     mediaPlayer.reset();
      mediaPlayer.setDataSource(fileDescriptor.getFileDescriptor(),fileDescriptor.getStartOffset(),fileDescriptor.getLength());
      mediaPlayer.prepare();
      mediaPlayer.start();
