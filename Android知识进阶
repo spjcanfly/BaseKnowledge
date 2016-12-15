@@ -58,3 +58,37 @@ priority；包含了执行改方法所需的一切。
     set.play(animator1).with(animator2);
     set.play(animator3).after(animator1);
     set.setDuration(1000).start();
+
+5.viewpager显示多个item
+     切记一定要用一个父布局包裹着它才行！
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/viewPagerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clipChildren="false"
+        android:gravity="center_horizontal"
+        android:layerType="software"
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:clipChildren="false" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+     // pageCount设置红缓存的页面数
+        viewpager.setOffscreenPageLimit(5);
+        // 设置2张图之前的间距。
+        viewpager.setPageMargin(20);
+        //设置viewpager的滑动的动画
+        viewpager.setPageTransformer(true, new ScalePageTransformer());
+        //设置ViewPage的适配器
+        viewpager.setAdapter(new MyPagerAdapter(list));
+        //设置当前的当前的显示位置，这句话应该放在setAdapter后，才会生效
+        viewpager.setCurrentItem(2);
+        //得到屏幕滑动的百分比
+        viewpager.setOnPageChangeListener(new MyOnPageChangeListener());
